@@ -2,7 +2,7 @@
  WSGI Sandbox
 ==============
 
-This project contains some WSGI deployment demonstrations.
+This project contains some WSGI deployment demonstrations using Python 2.7.3.
 
 Install Python dependencies in a virtualenv::
 
