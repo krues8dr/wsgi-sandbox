@@ -27,6 +27,10 @@ On Ubuntu::
 
     sudo apt-get install apache2-utils
 
+To gracefully reload gunicorn::
+
+    kill -HUP `supervisorctl pid flask_instance`
+
 A note on following the logs. ``supervisorctl`` provides a useful tail command,
 which supports ``tail -f``. However, it's buffered by default. If you want to
 see some action, instead of ``supervisorctl tail -f flask_instance``, use
