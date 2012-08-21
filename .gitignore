@@ -13,6 +13,7 @@
 /env/
 __MACOSX
 *.log
+*.log.*
 *.pid
 *.pyc
 *.pyo
