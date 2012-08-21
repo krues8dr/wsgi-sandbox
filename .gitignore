@@ -12,6 +12,8 @@
 *.egg-info/
 /env/
 __MACOSX
+*.log
+*.pid
 *.pyc
 *.pyo
 *.sqlite
