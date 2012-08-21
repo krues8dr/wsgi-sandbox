@@ -4,6 +4,24 @@
 
 This project contains some WSGI deployment demonstrations using Python 2.7.3.
 
+Motivation:
+
+1. Deploy standalone WSGI applications with a solid httpd proxy in front.
+2. Support gracefully reloading application code without dropping any requests.
+3. Configure WSGI applications with production loggers.
+4. Have all loggers go to a single destination, per application.
+5. Rotate log files with a simple configuration.
+6. Keep all production configuration in once place.
+
+Demonstration:
+
+1. Set up gunicorn with nginx proxying in front.
+2. Run gunicorn via supervisord, gracefully reload with pid from supervisorctl.
+3. Configure Python's standard library logging to each WSGI application.
+4. Use stderr logging handlers, pass through gunicorn, capture with supervisor.
+5. Rotate log files with supervisord.
+6. Put all production configuration in supervisord.conf.
+
 Install Python dependencies in a virtualenv::
 
     pip install -r requirements.txt
