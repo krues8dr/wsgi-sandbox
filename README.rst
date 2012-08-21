@@ -11,3 +11,7 @@ Install Python dependencies in a virtualenv::
 Kick everything off by starting supervisor::
 
     supervisord
+
+Proxy via nginx::
+
+    nginx -p . -c nginx.conf
