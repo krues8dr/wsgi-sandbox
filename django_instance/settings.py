@@ -1,5 +1,7 @@
 # Django settings for django_instance project.
 
+# NOTE: When DEBUG = True, django has opinions about logging.
+# This demonstration will likely break if DEBUG is True.
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
@@ -127,6 +129,9 @@ INSTALLED_APPS = (
 # the site admins on every HTTP 500 error.
 # See http://docs.djangoproject.com/en/dev/topics/logging for
 # more details on how to customize your logging configuration.
+
+# Note log levels here, as some of view's log messages will not be displayed.
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,

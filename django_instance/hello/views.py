@@ -1,3 +1,5 @@
+# Log handlers are configured in settings.py.
+
 import logging
 
 from django.http import HttpResponse
