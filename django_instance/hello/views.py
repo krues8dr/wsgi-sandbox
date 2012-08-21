@@ -12,4 +12,4 @@ def index(request):
     logger.warning('WARNING log message from Django at "/".')
     logger.error('ERROR log message from Django at "/".')
     logger.critical('CRITICAL log message from Django at "/".')
-    return HttpResponse('Django says, "Hello, world!"')
+    return HttpResponse('Django: "Hello, world!"', content_type='text/plain')

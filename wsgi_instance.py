@@ -13,4 +13,4 @@ def application(environ, start_response):
     logger.error('ERROR log message from WSGI application at "/".')
     logger.critical('CRITICAL log message from WSGI application at "/".')
     start_response('200 OK', [('Content-Type', 'text/plain')])
-    return ['WSGI application says, "Hello, world!"\n']
+    return ['WSGI application: "Hello, world!"\n']

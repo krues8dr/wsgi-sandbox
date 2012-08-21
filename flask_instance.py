@@ -18,7 +18,7 @@ def create_app(config_filename=None):
         app.logger.warning('WARNING log message from Flask at "/".')
         app.logger.error('ERROR log message from Flask at "/".')
         app.logger.critical('CRITICAL log message from Flask at "/".')
-        return 'Flask says, "Hello, world!"'
+        return 'Flask: "Hello, world!"', 200, {'Content-Type': 'text/plain'}
 
     @app.before_first_request
     def setup_logging():
